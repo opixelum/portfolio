@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
   <head>
     <meta charset="UTF-8">
     <meta name="description" content="All about my experience">
@@ -13,13 +13,11 @@
 
     <div id="about-me">
       <h2>About me</h2>
-      <p>
-        Since I was a kid, I've always been passionate about IT, video games,
-        high-tech and more, but my what I'm keen on is programming ! I really
-        like to code a lot, it's like having a super power. My current goal is
-        to work as a developer and learn everyday by being working with
-        experienced programmers.
-      </p>
+      <p>Since I was a kid, I've always been passionate about IT, video games,
+      high-tech and more, but my what I'm keen on is programming ! I really
+      like to code a lot, it's like having a super power. My current goal is
+      to work as a developer and learn everyday by being working with
+      experienced programmers.</p>
     </div>
     
     <div id="professional-experience">
@@ -48,10 +46,9 @@
 
     <div id="skills">
       <h2>My skills</h2>
-      <p>
-        Here are what I've learnt and what I use. Those are ordered from the
-        most mastered to the least.
-      </p>
+      <p>Here are what I've learnt and what I use. Those are ordered from the
+      most mastered to the least.</p>
+        
       <ul>
         <?php 
             // All my skills oreder from most mastered to least
@@ -68,20 +65,20 @@
 
     <div id="contact">
       <h2>Contact me</h2>
-      <form>
+      <form id="contact-form" accept-charset="UTF-8" action="send_message.php">
         <label for="name">Name* (first/last names or company)</label><br>
         <input required type="text" id="name" placeholder="John Doe"><br><br>
 
         <label for="email">Email address*</label><br>
         <input required type="email" id="email"
-          placeholder="john.doe@email.com"><br><br>
+        placeholder="john.doe@email.com"><br><br>
 
         <label for="phone">Phone number</label><br>
         <input type="tel" id="phone" placeholder="06 12 34 56 78"><br><br>
 
         <label for="message">Your message*</label><br>
         <textarea required id="message"
-          placeholder="Type your message here."></textarea><br><br>
+        placeholder="Type your message here."></textarea><br><br>
 
         <input type="submit" id="submit" placeholder="Send message">
 
