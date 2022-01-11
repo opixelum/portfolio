@@ -32,7 +32,7 @@
     </div>
 
     <div id="diplomas">
-      <h2>Diplomas</h2>
+      <h2>My diplomas</h2>
       <ul>
         <li>
           <h3>Diplôme National du Brevet des collèges</h3>
@@ -41,6 +41,34 @@
         <li>
           <h3>Diplôme du baccalauréat</h3>
           <p>Mention Très bien | 2018 - 2021</p>
+        </li>
+      </ul>
+    </div>
+
+    <div id="skills">
+      <h2>My skills</h2>
+      <p>
+        Here are what I've learnt and what I use. Those are ordered from the
+        most mastered to the least.
+      </p>
+      <ul>
+        <li>
+          <h3>C</h3>
+        </li>
+        <li>
+          <h3>Python</h3>
+        </li>
+        <li>
+          <h3>HTML</h3>
+        </li>
+        <li>
+          <h3>CSS</h3>
+        </li>
+        <li>
+          <h3>JavaScript</h3>
+        </li>
+        <li>
+          <h3>PHP</h3>
         </li>
       </ul>
     </div>
