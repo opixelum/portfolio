@@ -9,9 +9,10 @@ interface.
 It will act like my resume (I will put a link to this website on my real
 resume). I also want to put my portfolio's link on all my medias.
 
-## What to include
+The whole website will contain only one page, in order to have an interactive
+experience.
 
-Each category will be a page.
+## What to include
 
 - About me
 - Professional experience

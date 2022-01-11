@@ -9,17 +9,16 @@
   </head>
 
   <body>
-    <h1>Welcome to my portfolio!</h1>    
+    <h1>Hi! I'm Anto, computer science student</h1>    
 
     <div id="about-me">
       <h2>About me</h2>
       <p>
-        Hi, my name is Anto Benedetti, I'm 18 years old and I'm a computer science
-        student, attending the ESGI in Paris. Since I was a kid, I've always
-        been passionate about IT, video games, high-tech and more, but my what
-        I'm keen on is programming ! I really like to code a lot, it's like
-        having a super power. My current goal is to work as a developer and learn
-        everyday by being working with experienced programmers.
+        Since I was a kid, I've always been passionate about IT, video games,
+        high-tech and more, but my what I'm keen on is programming ! I really
+        like to code a lot, it's like having a super power. My current goal is
+        to work as a developer and learn everyday by being working with
+        experienced programmers.
       </p>
     </div>
     
@@ -65,6 +64,29 @@
             }
         ?>
       </ul>
+    </div>
+
+    <div id="contact">
+      <h2>Contact me</h2>
+      <form>
+        <label for="name">Name* (first/last names or company)</label><br>
+        <input required type="text" id="name" placeholder="John Doe"><br><br>
+
+        <label for="email">Email address*</label><br>
+        <input required type="email" id="email"
+          placeholder="john.doe@email.com"><br><br>
+
+        <label for="phone">Phone number</label><br>
+        <input type="tel" id="phone" placeholder="06 12 34 56 78"><br><br>
+
+        <label for="message">Your message*</label><br>
+        <textarea required id="message"
+          placeholder="Type your message here."></textarea><br><br>
+
+        <input type="submit" id="submit" placeholder="Send message">
+
+        <p>*: required field</p>
+      </form>
     </div>
   </body>
 </html>
