@@ -54,24 +54,16 @@
         most mastered to the least.
       </p>
       <ul>
-        <li>
-          <h3>C</h3>
-        </li>
-        <li>
-          <h3>Python</h3>
-        </li>
-        <li>
-          <h3>HTML</h3>
-        </li>
-        <li>
-          <h3>CSS</h3>
-        </li>
-        <li>
-          <h3>JavaScript</h3>
-        </li>
-        <li>
-          <h3>PHP</h3>
-        </li>
+        <?php 
+            // All my skills oreder from most mastered to least
+            $skills = ['C', "Python", "HTML", "CSS", "PHP", "JavaScript"]; 
+
+            // Print each skill in <li> tags
+            foreach ($skills as $key => $skill)
+            {
+                echo "<li><h3>$skill</h3></li>";
+            }
+        ?>
       </ul>
     </div>
   </body>
