@@ -1,6 +1,6 @@
-# MyPortofolio website
+# MyPortfolio website
 
-I want to make a portoflio to showcase my projects, experience and talk about
+I want to make a portflio to showcase my projects, experience and talk about
 me. I want to build a modern, well designed portofolio. It will act like my
 resume (I will put a link to this website on my real resume).
 

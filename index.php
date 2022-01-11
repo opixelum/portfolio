@@ -5,11 +5,11 @@
     <meta name="description" content="All about my experience">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="CSS/style.css">
-    <title>Anto's portofolio</title>
+    <title>Anto's portfolio</title>
   </head>
 
   <body>
-    <h1>Welcome to my portofolio!</h1>    
+    <h1>Welcome to my portfolio!</h1>    
 
     <div id="about-me">
       <h2>About me</h2>
