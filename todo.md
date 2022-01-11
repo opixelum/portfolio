@@ -1,1 +1,5 @@
+- [ ] Code header & footer as includes
+- [ ] Code contact form back-end (send email, count entries & save form data in db)
 - [ ] Use an international telephone input
+- [ ] Improve readme (see Caleb Curry markdown tutorial)
+- [ ] Code a secret page for website monitoring (see analytics, add content easily)
