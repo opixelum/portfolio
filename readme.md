@@ -1,8 +1,11 @@
-# MyPortfolio website
+# MyPortflio website
+
+http://localhost/MyPortfolio/
 
 I want to make a portflio to showcase my projects, experience and talk about
 me. I want to build a modern, well designed portofolio. It will act like my
-resume (I will put a link to this website on my real resume).
+resume (I will put a link to this website on my real resume). I also want to
+put my portfolio's link on all my medias.
 
 ## What to include
 
