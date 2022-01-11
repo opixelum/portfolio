@@ -65,19 +65,22 @@
 
     <div id="contact">
       <h2>Contact me</h2>
-      <form id="contact-form" accept-charset="UTF-8" action="send_message.php">
+      <form id="contact-form" accept-charset="UTF-8" action="send_message.php"
+      method="POST">
         <label for="name">Name* (first/last names or company)</label><br>
-        <input required type="text" id="name" placeholder="John Doe"><br><br>
+        <input required type="text" id="name" name="name"
+        placeholder="John Doe"><br><br>
 
         <label for="email">Email address*</label><br>
-        <input required type="email" id="email"
+        <input required type="email" id="email" name="email"
         placeholder="john.doe@email.com"><br><br>
 
         <label for="phone">Phone number</label><br>
-        <input type="tel" id="phone" placeholder="06 12 34 56 78"><br><br>
+        <input type="tel" id="phone" name="phone"
+        placeholder="06 12 34 56 78"><br><br>
 
         <label for="message">Your message*</label><br>
-        <textarea required id="message"
+        <textarea required id="message" name="message"
         placeholder="Type your message here."></textarea><br><br>
 
         <input type="submit" id="submit" placeholder="Send message">
