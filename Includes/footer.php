@@ -1,3 +1,1 @@
-<footer>
-  <a href="login.php">Staff only</a>
-</footer>
+<footer>© Anto Benedetti 2022</footer>

@@ -9,6 +9,9 @@
   </head>
 
   <body>
+    <!-- Header -->
+    <?php include("Includes/header.php"); ?>
+
     <main>
       <h1>Hi! I'm Anto, computer science student</h1>    
 
@@ -91,9 +94,7 @@
       </div>
     </main>
     
-    <?php 
-        // Footer
-        include("Includes/footer.php"); 
-    ?>
+    <!-- Footer -->
+    <?php include("Includes/footer.php"); ?>
   </body>
 </html>
