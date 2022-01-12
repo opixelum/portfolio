@@ -9,7 +9,6 @@
   </head>
 
   <body>
-    <!-- Header -->
     <?php include("Includes/header.php"); ?>
 
     <main>
@@ -28,8 +27,16 @@
         <h2>My professional experience</h2>
         <ul>
           <li>
-            <h3>9th grade internship</h3>
-            <p>FNAC Limoges | February 2018</p>
+            <h3>Web development assistant</h3>
+            <p>Kreoli SARL | Saint Martin | April 2019</p>
+          </li>
+          <li>
+            <h3>Video games sector sales intern</h3>
+            <p>FNAC SA | Limoges | January 2018</p>
+          </li>
+          <li>
+            <h3>IT technician</h3>
+            <p>Kreoli SARL | Saint Martin | Mars 2017</p>
           </li>
         </ul>
       </div>
@@ -67,7 +74,7 @@
         </ul>
       </div>
 
-      <div id="contact">
+      <div id="contact-me">
         <h2>Contact me</h2>
         <form id="contact-form" accept-charset="UTF-8" action="send_message.php"
         method="POST">
@@ -93,8 +100,7 @@
         </form>
       </div>
     </main>
-    
-    <!-- Footer -->
+
     <?php include("Includes/footer.php"); ?>
   </body>
 </html>
