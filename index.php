@@ -17,10 +17,11 @@
       <div id="about-me">
         <h2>About me</h2>
         <p>Since I was a kid, I've always been passionate about IT, video games,
-        high-tech and more, but my what I'm keen on is programming ! I really
-        like to code a lot, it's like having a super power. My current goal is
-        to work as a developer and learn everyday by being working with
-        experienced programmers.</p>
+        high-tech and more, but what I'm keen on is programming ! I really like
+        to code a lot, it's like having a super power. I'm interested in the web
+        3.0 development for building decentralized apps on blockchains, but also
+        in software and mobile development. My qualities are dedication, 
+        determination and project management.</p>
       </div>
       
       <div id="professional-experience">
@@ -45,12 +46,16 @@
         <h2>My diplomas</h2>
         <ul>
           <li>
+            <h3>Computer science european bachelor</h3>
+            <p>ESGI Paris | Ongoing | 2021-2026</p>
+          </li>
+          <li>
             <h3>Diplôme National du Brevet des collèges</h3>
-            <p>Mention Très bien | 2017-2018</p>
+            <p>LGT Robert Weinum Saint Martin | Mention Très bien | 2017-2018</p>
           </li>
           <li>
             <h3>Diplôme du baccalauréat</h3>
-            <p>Mention Très bien | 2018 - 2021</p>
+            <p>Collège Soualiga Saint Martin | Mention Très bien | 2018 - 2021</p>
           </li>
         </ul>
       </div>
