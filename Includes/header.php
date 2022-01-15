@@ -12,7 +12,7 @@
       </li>
       <li>
         <a href="#skills-div">Skills</a>
-      </li
+      </li>
       <li>
         <a href="#contact-me">Contact me</a>
       </li>
