@@ -24,22 +24,9 @@
         determination and project management.</p>
       </div>
       
-      <div id="professional-experience">
+      <div id="professional-experience-div">
         <h2>My professional experience</h2>
-        <ul>
-          <li>
-            <h3>Web development assistant</h3>
-            <p>Kreoli SARL | Saint Martin | April 2019</p>
-          </li>
-          <li>
-            <h3>Video games sector sales intern</h3>
-            <p>FNAC SA | Limoges | January 2018</p>
-          </li>
-          <li>
-            <h3>IT technician</h3>
-            <p>Kreoli SARL | Saint Martin | Mars 2017</p>
-          </li>
-        </ul>
+        <ul id="professional-experience-ul"></ul>
       </div>
 
       <div id="diplomas">
@@ -107,5 +94,6 @@
     </main>
 
     <?php include("Includes/footer.php"); ?>
+    <script src="index.js"></script>
   </body>
 </html>
