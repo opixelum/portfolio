@@ -29,41 +29,17 @@
         <ul id="professional-experience-ul"></ul>
       </div>
 
-      <div id="diplomas">
+      <div id="diplomas-div">
         <h2>My diplomas</h2>
-        <ul>
-          <li>
-            <h3>Computer science european bachelor</h3>
-            <p>ESGI Paris | Ongoing | 2021-2026</p>
-          </li>
-          <li>
-            <h3>Diplôme National du Brevet des collèges</h3>
-            <p>LGT Robert Weinum Saint Martin | Mention Très bien | 2017-2018</p>
-          </li>
-          <li>
-            <h3>Diplôme du baccalauréat</h3>
-            <p>Collège Soualiga Saint Martin | Mention Très bien | 2018 - 2021</p>
-          </li>
-        </ul>
+        <ul id="diplomas-ul"></ul>
       </div>
 
-      <div id="skills">
+      <div id="skills-div">
         <h2>My skills</h2>
         <p>Here are what I've learnt and what I use. Those are ordered from the
         most mastered to the least.</p>
           
-        <ul>
-          <?php 
-              // All my skills oreder from most mastered to least
-              $skills = ['C', "Python", "HTML", "CSS", "PHP", "JavaScript"]; 
-
-              // Print each skill in <li> tags
-              foreach ($skills as $key => $skill)
-              {
-                  echo "<li><h3>$skill</h3></li>";
-              }
-          ?>
-        </ul>
+        <ul id="skills-ul"></ul>
       </div>
 
       <div id="contact-me">
