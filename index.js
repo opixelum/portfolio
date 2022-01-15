@@ -1,3 +1,15 @@
+/**
+ * @file index.js
+ * @brief Script for index.html.
+ * 
+ * This script build the website dynamically, by adding HTML content and
+ * making effect. It permits to be an interactive website.
+ * 
+ * @author Anto Benedetti (Opixelum)
+ * @bug No known bugs.
+ */
+
+
 // <------------- P R O F E S S I O N A L   E X P E R I E N C E -------------->
 
 // Job list
