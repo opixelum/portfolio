@@ -1,0 +1,19 @@
+html {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #1a1c1e;
+    color: white;
+}
+
+/* Header */
+nav a {
+    color: white;
+}
+
+/* Main*/
+
+main div {
+    border-radius: 25px;
+    background-color: rgba(60, 60, 60, .5);
+    margin: 20px;
+    padding: 20px 35px;
+}

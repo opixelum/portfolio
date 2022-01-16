@@ -117,3 +117,56 @@ for (let i = 0; i < skills.length; i++) {
 
 // Modify HTML with new skills list
 skillsUl.innerHTML = skillsUlContent 
+
+
+// <----------------------- I N T E R A C T I V I T Y ------------------------>
+
+// Get each division of the page
+const aboutMeDiv = document.getElementById("about-me-div")
+const professionalExperienceDiv = document.getElementById("professional-experience-div")
+const diplomasDiv = document.getElementById("diplomas-div")
+const skillsDiv = document.getElementById("skills-div")
+const contactMeDiv = document.getElementById("contact-me-div")
+
+// Group all divisions in one array
+const pageContent = [aboutMeDiv, professionalExperienceDiv, diplomasDiv, skillsDiv, contactMeDiv]
+
+// Hide divisions
+function hideDivisions() {
+    for (let i = 0; i < pageContent.length; i++) {
+        pageContent[i].style.display = "none"
+    }
+}
+// Call above function to hide divisions when opening page
+hideDivisions()
+
+// Show divisions when clicking on respective button
+const aboutMeBtn = document.getElementById("about-me-btn")
+aboutMeBtn.addEventListener("click", function() {
+    hideDivisions()
+    aboutMeDiv.style.display = "block"
+})
+
+const professionalExperienceBtn = document.getElementById("professional-experience-btn")
+professionalExperienceBtn.addEventListener("click", function() {
+    hideDivisions()
+    professionalExperienceDiv.style.display = "block"
+})
+
+const diplomasBtn = document.getElementById("diplomas-btn")
+diplomasBtn.addEventListener("click", function() {
+    hideDivisions()
+    diplomasDiv.style.display = "block"
+})
+
+const skillsBtn = document.getElementById("skills-btn")
+skillsBtn.addEventListener("click", function() {
+    hideDivisions()
+    skillsDiv.style.display = "block"
+})
+
+const contactMeBtn = document.getElementById("contact-me-btn")
+contactMeBtn.addEventListener("click", function() {
+    hideDivisions()
+    contactMeDiv.style.display = "block"
+})
