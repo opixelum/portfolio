@@ -1,7 +1,7 @@
 - [X] Code header & footer as includes
-- [ ] Complete html
+- [X] Complete html
 - [ ] Improve readme (see Caleb Curry markdown tutorial)
-- [ ] Style page with CSS
+- [X] Style page with CSS
 - [ ] Code a secret page for website monitoring (see analytics, add content easily)
 - [ ] Code contact form back-end (send email, count entries & save form data in db)
 - [ ] Use an international telephone input
