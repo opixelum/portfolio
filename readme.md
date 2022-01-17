@@ -1,6 +1,7 @@
 # MyPortflio website
 
 http://localhost/MyPortfolio/
+file:///opt/lampp/htdocs/MyPortfolio/index.html
 
 I want to make a portflio to showcase my projects, experience and talk about
 me. I want to build a modern, well designed portofolio, with a code-oriented
