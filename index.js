@@ -122,14 +122,14 @@ skillsUl.innerHTML = skillsUlContent
 // <----------------------- I N T E R A C T I V I T Y ------------------------>
 
 // Get each division of the page
-const aboutMeDiv = document.getElementById("about-me-div")
+const aboutDiv = document.getElementById("about-div")
 const professionalExperienceDiv = document.getElementById("professional-experience-div")
 const diplomasDiv = document.getElementById("diplomas-div")
 const skillsDiv = document.getElementById("skills-div")
-const contactMeDiv = document.getElementById("contact-me-div")
+const contactDiv = document.getElementById("contact-div")
 
 // Group all divisions in one array
-const pageContent = [aboutMeDiv, professionalExperienceDiv, diplomasDiv, skillsDiv, contactMeDiv]
+const pageContent = [aboutDiv, professionalExperienceDiv, diplomasDiv, skillsDiv, contactDiv]
 
 // Hide divisions
 function hideDivisions() {
@@ -141,10 +141,10 @@ function hideDivisions() {
 hideDivisions()
 
 // Show divisions when clicking on respective button
-const aboutMeBtn = document.getElementById("about-me-btn")
-aboutMeBtn.addEventListener("click", function() {
+const aboutBtn = document.getElementById("about-btn")
+aboutBtn.addEventListener("click", function() {
     hideDivisions()
-    aboutMeDiv.style.display = "block"
+    aboutDiv.style.display = "block"
 })
 
 const professionalExperienceBtn = document.getElementById("professional-experience-btn")
@@ -165,8 +165,8 @@ skillsBtn.addEventListener("click", function() {
     skillsDiv.style.display = "block"
 })
 
-const contactMeBtn = document.getElementById("contact-me-btn")
-contactMeBtn.addEventListener("click", function() {
+const contactBtn = document.getElementById("contact-btn")
+contactBtn.addEventListener("click", function() {
     hideDivisions()
-    contactMeDiv.style.display = "block"
+    contactDiv.style.display = "block"
 })
