@@ -1,6 +1,7 @@
 - [X] Code header & footer as includes
 - [X] Complete html
 - [ ] Improve readme (see Caleb Curry markdown tutorial)
+- [ ] Replace skills text by pictures
 - [X] Style page with CSS
 - [ ] Code a secret page for website monitoring (see analytics, add content easily)
 - [ ] Code contact form back-end (send email, count entries & save form data in db)

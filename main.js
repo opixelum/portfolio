@@ -10,6 +10,80 @@
  */
 
 
+// <----------------------- I N T E R A C T I V I T Y ------------------------>
+
+// Get document elements
+const header = document.getElementById("header")
+const title = document.getElementById("title")
+const mainMenu = document.getElementById("main-menu")
+const goBackBtn = document.getElementById("go-back-btn")
+const aboutDiv = document.getElementById("about-div")
+const professionalExperienceDiv = document.getElementById("professional-experience-div")
+const diplomasDiv = document.getElementById("diplomas-div")
+const skillsDiv = document.getElementById("skills-div")
+const contactDiv = document.getElementById("contact-div")
+
+// Group all divisions in one array
+const pageContent = [aboutDiv, professionalExperienceDiv, diplomasDiv, skillsDiv, contactDiv]
+
+
+// Hide menu, display "Go back" button & change page title
+function showDivision(division) {
+    division.style.display = "block"
+    goBackBtn.style.display = "block"
+    mainMenu.style.display = "none"
+}
+
+// Hide divisions
+function hideDivisions() {
+    for (let i = 0; i < pageContent.length; i++) {
+        pageContent[i].style.display = "none"
+    }
+}
+// Call above function to hide divisions when opening page
+hideDivisions()
+
+goBackBtn.addEventListener("click", function() {
+    hideDivisions()
+    title.style.display = "block"
+    goBackBtn.style.display = "none"
+    mainMenu.style.display = "block"
+})
+
+// Show divisions when clicking on respective button
+const aboutBtn = document.getElementById("about-btn")
+aboutBtn.addEventListener("click", function() {
+    hideDivisions()
+    showDivision(aboutDiv)
+})
+
+const professionalExperienceBtn = document.getElementById("professional-experience-btn")
+professionalExperienceBtn.addEventListener("click", function() {
+    hideDivisions()
+    showDivision(professionalExperienceDiv)
+})
+
+const diplomasBtn = document.getElementById("diplomas-btn")
+diplomasBtn.addEventListener("click", function() {
+    hideDivisions()
+    showDivision(diplomasDiv)
+})
+
+const skillsBtn = document.getElementById("skills-btn")
+skillsBtn.addEventListener("click", function() {
+    hideDivisions()
+    showDivision(skillsDiv)
+})
+
+const contactBtn = document.getElementById("contact-btn")
+contactBtn.addEventListener("click", function() {
+    hideDivisions()
+    showDivision(contactDiv)
+})
+
+
+// <############################# C O N T E N T ##############################>
+
 // <------------- P R O F E S S I O N A L   E X P E R I E N C E -------------->
 
 // Job list
@@ -46,7 +120,7 @@ for (let i = 0; i < professionalExperience.length; i++) {
     <li>
       <h3>${professionalExperience[i].title}</h3>
       <p>${professionalExperience[i].company} | ${professionalExperience[i].place}
-      | ${professionalExperience[i].date}</p>
+      | ${professionalExperience[i].date}</p><br>
     </li>`
 }
 
@@ -90,7 +164,7 @@ for (let i = 0; i < diplomas.length; i++) {
     <li>
       <h3>${diplomas[i].title}</h3>
       <p>${diplomas[i].school} | ${diplomas[i].result}
-      | ${diplomas[i].date}</p>
+      | ${diplomas[i].date}</p><br>
     </li>`
 }
 
@@ -117,56 +191,3 @@ for (let i = 0; i < skills.length; i++) {
 
 // Modify HTML with new skills list
 skillsUl.innerHTML = skillsUlContent 
-
-
-// <----------------------- I N T E R A C T I V I T Y ------------------------>
-
-// Get each division of the page
-const aboutDiv = document.getElementById("about-div")
-const professionalExperienceDiv = document.getElementById("professional-experience-div")
-const diplomasDiv = document.getElementById("diplomas-div")
-const skillsDiv = document.getElementById("skills-div")
-const contactDiv = document.getElementById("contact-div")
-
-// Group all divisions in one array
-const pageContent = [aboutDiv, professionalExperienceDiv, diplomasDiv, skillsDiv, contactDiv]
-
-// Hide divisions
-function hideDivisions() {
-    for (let i = 0; i < pageContent.length; i++) {
-        pageContent[i].style.display = "none"
-    }
-}
-// Call above function to hide divisions when opening page
-hideDivisions()
-
-// Show divisions when clicking on respective button
-const aboutBtn = document.getElementById("about-btn")
-aboutBtn.addEventListener("click", function() {
-    hideDivisions()
-    aboutDiv.style.display = "block"
-})
-
-const professionalExperienceBtn = document.getElementById("professional-experience-btn")
-professionalExperienceBtn.addEventListener("click", function() {
-    hideDivisions()
-    professionalExperienceDiv.style.display = "block"
-})
-
-const diplomasBtn = document.getElementById("diplomas-btn")
-diplomasBtn.addEventListener("click", function() {
-    hideDivisions()
-    diplomasDiv.style.display = "block"
-})
-
-const skillsBtn = document.getElementById("skills-btn")
-skillsBtn.addEventListener("click", function() {
-    hideDivisions()
-    skillsDiv.style.display = "block"
-})
-
-const contactBtn = document.getElementById("contact-btn")
-contactBtn.addEventListener("click", function() {
-    hideDivisions()
-    contactDiv.style.display = "block"
-})
