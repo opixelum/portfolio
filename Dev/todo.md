@@ -7,3 +7,7 @@
 - [ ] Style input fields
 - [ ] Fix div size (pay attention for phone display)
 - [ ] Make div overflow scrollable
+- [ ] Add transition between page
+- [ ] Code refactoring
+- [ ] Add "Projects"
+- [ ] Add effect on button release
