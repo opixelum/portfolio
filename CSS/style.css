@@ -23,13 +23,6 @@ canvas {
 
 /* Header */
 
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    z-index: 1;
-}
 
 h1 {
     margin-bottom: 20px;
@@ -55,7 +48,7 @@ ul {
 /* Buttons */
 button {
     display: inline-block;
-    background-color: #333333;
+    background-color: rgba(70, 70, 70, .8);
     width: 325px;
     height: 50px;
     color: white;
@@ -66,6 +59,7 @@ button {
     margin: 2px;
     border: none;
     transition-duration: all .3s;
+    z-index: 1;
 }
 
 button span {
@@ -92,12 +86,12 @@ button:hover span:after {
 }
 
 button:hover {
-    background-color: #444444;
+    background-color: #666666;
 }
 
 div {
     border-radius: 25px;
-    background-color: rgba(60, 60, 60, .5);
+    background-color: rgba(60, 60, 60, .8);
     padding: 10px 35px 20px 35px;
     max-width: 75%;
 }
