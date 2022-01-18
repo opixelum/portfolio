@@ -6,3 +6,4 @@
 - [ ] Code a secret page for website monitoring (see analytics, add content easily)
 - [ ] Code contact form back-end (send email, count entries & save form data in db)
 - [ ] Use an international telephone input
+- [ ] Add link to download resume
