@@ -58,7 +58,7 @@ button {
     font-weight: bold;
     margin: 2px;
     border: none;
-    transition-duration: all .3s;
+    transition-duration: .3s;
     z-index: 1;
 }
 
@@ -87,6 +87,11 @@ button:hover span:after {
 
 button:hover {
     background-color: #666666;
+}
+
+button:active {
+    background-color: #333333;
+    transition: none;
 }
 
 div {
