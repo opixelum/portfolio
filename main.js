@@ -119,8 +119,9 @@ for (let i = 0; i < professionalExperience.length; i++) {
     professionalExperienceUlContent += `
     <li>
       <h3>${professionalExperience[i].title}</h3>
-      <p>${professionalExperience[i].company} | ${professionalExperience[i].place}
-      | ${professionalExperience[i].date}</p><br>
+      <p>${professionalExperience[i].company}<br>
+      ${professionalExperience[i].place}<br>
+      ${professionalExperience[i].date}</p>
     </li>`
 }
 
@@ -163,8 +164,8 @@ for (let i = 0; i < diplomas.length; i++) {
     diplomasUlContent += `
     <li>
       <h3>${diplomas[i].title}</h3>
-      <p>${diplomas[i].school} | ${diplomas[i].result}
-      | ${diplomas[i].date}</p><br>
+      <p>${diplomas[i].school}<br>${diplomas[i].result}<br>
+      ${diplomas[i].date}</p>
     </li>`
 }
 

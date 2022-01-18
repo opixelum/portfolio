@@ -9,10 +9,33 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     height: 100%;
+}
+
+
+/* Header */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+
+/* Main*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 ul {
@@ -21,6 +44,7 @@ ul {
     padding: 0;
 }
 
+/* Buttons */
 button {
     display: inline-block;
     background-color: #333333;
@@ -63,6 +87,30 @@ button:hover {
     background-color: #444444;
 }
 
+div {
+    border-radius: 25px;
+    background-color: rgba(60, 60, 60, .5);
+    padding: 10px 35px 20px 35px;
+    max-width: 75%;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+#about-div p {
+    text-align: justify;
+    text-justify: auto;
+}
+
+/* Go back button */
+
+#go-back-btn {
+    display: none;
+    width: 150px;
+    margin: 20px 0;
+}
+
 #go-back-btn span:after {
     content:"\00ab";
     left: -80px;
@@ -77,29 +125,4 @@ button:hover {
 #go-back-btn:hover span:after {
     left: 0;
     right: 90px;
-}
-
-
-/* Header */
-
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-#go-back-btn {
-    display: none;
-    width: 150px;
-}
-
-
-/* Main*/
-
-main div {
-    border-radius: 25px;
-    background-color: rgba(60, 60, 60, .5);
-    margin: 20px;
-    padding: 10px 35px 20px 35px;
 }
