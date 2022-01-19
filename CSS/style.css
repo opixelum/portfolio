@@ -102,7 +102,7 @@ div {
     padding: 5px 35px 20px 35px;
     width: 75%;
     height: 100%;
-    overflow: scroll;
+    overflow-y: auto;
 }
 
 div li {
@@ -143,4 +143,19 @@ h2 {
 #go-back-btn:hover span:after {
     left: 0;
     right: 90px;
+}
+
+::-webkit-scrollbar {
+    display: block;
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    opacity: 0;
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #201920; 
+    border-radius: 10px;
 }

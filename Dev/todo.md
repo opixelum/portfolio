@@ -6,7 +6,7 @@
 - [ ] Add link to download resume
 - [ ] Style input fields
 - [X] Fix div size (pay attention for phone display)
-- [ ] Make div overflow scrollable
+- [X] Make div overflow scrollable
 - [ ] Add transition between page
 - [ ] Code refactoring
 - [ ] Add "Projects"
