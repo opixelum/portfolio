@@ -96,6 +96,8 @@ button:active {
     background-color: #333333;
 }
 
+/* Divisions */
+
 div {
     border-radius: 25px;
     background-color: rgba(60, 60, 60, .8);
@@ -105,6 +107,10 @@ div {
     overflow-y: auto;
 }
 
+h2 {
+    margin-bottom: 20px;
+}
+
 div li {
     border-radius: 25px;
     background-color: #202020;
@@ -112,13 +118,31 @@ div li {
     margin: 10px;
 }
 
-h2 {
-    margin-bottom: 20px;
+h3 {
+    margin-top: 10px;
 }
 
 #about-div p {
     text-align: justify;
     text-justify: auto;
+}
+
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    display: block;
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    opacity: 0;
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #201920; 
+    border-radius: 10px;
 }
 
 /* Go back button */
@@ -143,19 +167,4 @@ h2 {
 #go-back-btn:hover span:after {
     left: 0;
     right: 90px;
-}
-
-::-webkit-scrollbar {
-    display: block;
-    width: 5px;
-}
-
-::-webkit-scrollbar-track {
-    border-radius: 10px;
-    opacity: 0;
-}
- 
-::-webkit-scrollbar-thumb {
-    background: #201920; 
-    border-radius: 10px;
 }
