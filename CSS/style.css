@@ -91,14 +91,20 @@ button:hover {
 
 button:active {
     background-color: #333333;
-    transition: none;
 }
 
 div {
     border-radius: 25px;
     background-color: rgba(60, 60, 60, .8);
     padding: 10px 35px 20px 35px;
-    max-width: 75%;
+    width: 75%;
+}
+
+div li {
+    border-radius: 25px;
+    background-color: #202020;
+    padding: 10px;
+    margin: 10px;
 }
 
 h2 {
