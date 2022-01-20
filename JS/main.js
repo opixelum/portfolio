@@ -1,5 +1,5 @@
 /**
- * @file index.js
+ * @file main.js
  * @brief Script for index.html.
  * 
  * This script builds the website dynamically, by adding HTML content and
@@ -12,19 +12,71 @@
 
 // <----------------------- I N T E R A C T I V I T Y ------------------------>
 
-// Get document elements
-const header = document.getElementById("header")
-const title = document.getElementById("title")
-const mainMenu = document.getElementById("main-menu")
-const goBackBtn = document.getElementById("go-back-btn")
+// Get all main menu buttons
+const aboutBtn = document.getElementById("about-btn")
+const professionalExperienceBtn = document.getElementById("professional-experience-btn")
+const diplomasBtn = document.getElementById("diplomas-btn")
+const skillsBtn = document.getElementById("skills-btn")
+const projectsBtn = document.getElementById("projects-btn")
+const contactBtn = document.getElementById("contact-btn")
+
+// Group all divisions in a single array
+const mainMenuBtns = [
+    aboutBtn,
+    professionalExperienceBtn,
+    diplomasBtn,
+    projectsBtn,
+    skillsBtn,
+    contactBtn
+]
+
+// Add event listeners to all main menu buttons
+for (let i = 0; i < mainMenuBtns.length; i++) {
+    mainMenuBtns[i].addEventListener("click", function() {
+        hideAllDivisions()
+        showDivision(pageContent[i])
+    })
+}
+
+
+// Get all divisions
 const aboutDiv = document.getElementById("about-div")
 const professionalExperienceDiv = document.getElementById("professional-experience-div")
 const diplomasDiv = document.getElementById("diplomas-div")
+const projectsDiv = document.getElementById("projects-div")
 const skillsDiv = document.getElementById("skills-div")
 const contactDiv = document.getElementById("contact-div")
 
-// Group all divisions in one array
-const pageContent = [aboutDiv, professionalExperienceDiv, diplomasDiv, skillsDiv, contactDiv]
+// Group all divisions in a single array
+const pageContent = [
+    aboutDiv,
+    professionalExperienceDiv,
+    diplomasDiv,
+    projectsDiv,
+    skillsDiv,
+    contactDiv
+]
+
+// Hide all divisions by setting their display to "none"
+function hideAllDivisions() {
+    for (let i = 0; i < pageContent.length; i++) {
+        pageContent[i].style.display = "none"
+    }
+}
+// Call above function to hide divisions when opening page
+hideAllDivisions()
+
+
+const mainMenu = document.getElementById("main-menu")
+
+
+// Get & configure the go back button
+const goBackBtn = document.getElementById("go-back-btn")
+goBackBtn.addEventListener("click", function() {
+    hideAllDivisions()
+    goBackBtn.style.display = "none"
+    mainMenu.style.display = "block"
+})
 
 
 // Hide menu, display "Go back" button & change page title
@@ -33,53 +85,6 @@ function showDivision(division) {
     goBackBtn.style.display = "block"
     mainMenu.style.display = "none"
 }
-
-// Hide divisions
-function hideDivisions() {
-    for (let i = 0; i < pageContent.length; i++) {
-        pageContent[i].style.display = "none"
-    }
-}
-// Call above function to hide divisions when opening page
-hideDivisions()
-
-goBackBtn.addEventListener("click", function() {
-    hideDivisions()
-    title.style.display = "block"
-    goBackBtn.style.display = "none"
-    mainMenu.style.display = "block"
-})
-
-// Show divisions when clicking on respective button
-const aboutBtn = document.getElementById("about-btn")
-aboutBtn.addEventListener("click", function() {
-    hideDivisions()
-    showDivision(aboutDiv)
-})
-
-const professionalExperienceBtn = document.getElementById("professional-experience-btn")
-professionalExperienceBtn.addEventListener("click", function() {
-    hideDivisions()
-    showDivision(professionalExperienceDiv)
-})
-
-const diplomasBtn = document.getElementById("diplomas-btn")
-diplomasBtn.addEventListener("click", function() {
-    hideDivisions()
-    showDivision(diplomasDiv)
-})
-
-const skillsBtn = document.getElementById("skills-btn")
-skillsBtn.addEventListener("click", function() {
-    hideDivisions()
-    showDivision(skillsDiv)
-})
-
-const contactBtn = document.getElementById("contact-btn")
-contactBtn.addEventListener("click", function() {
-    hideDivisions()
-    showDivision(contactDiv)
-})
 
 
 // <############################# C O N T E N T ##############################>

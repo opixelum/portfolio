@@ -7,7 +7,7 @@
 - [ ] Style input fields
 - [X] Fix div size (pay attention for phone display)
 - [X] Make div overflow scrollable
-- [ ] Add transition between page
+- [ ] Add transition between page with anime.js
 - [ ] Code refactoring
-- [ ] Add "Projects"
+- [X] Add "Projects"
 - [ ] Add effect on button release
