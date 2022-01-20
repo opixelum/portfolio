@@ -10,7 +10,9 @@
  */
 
 
-// <----------------------- I N T E R A C T I V I T Y ------------------------>
+// <####################### I N T E R A C T I V I T Y ########################>
+
+// <------------------- M A I N   M E N U   B U T T O N S -------------------->
 
 // Get all main menu buttons
 const aboutBtn = document.getElementById("about-btn")
@@ -34,10 +36,12 @@ const mainMenuBtns = [
 for (let i = 0; i < mainMenuBtns.length; i++) {
     mainMenuBtns[i].addEventListener("click", function() {
         hideAllDivisions()
-        showDivision(pageContent[i])
+        showDivision(divsContent[i])
     })
 }
 
+
+// <--------------------------- D I V I S I O N S ---------------------------->
 
 // Get all divisions
 const aboutDiv = document.getElementById("about-div")
@@ -48,7 +52,7 @@ const skillsDiv = document.getElementById("skills-div")
 const contactDiv = document.getElementById("contact-div")
 
 // Group all divisions in a single array
-const pageContent = [
+const divsContent = [
     aboutDiv,
     professionalExperienceDiv,
     diplomasDiv,
@@ -59,16 +63,24 @@ const pageContent = [
 
 // Hide all divisions by setting their display to "none"
 function hideAllDivisions() {
-    for (let i = 0; i < pageContent.length; i++) {
-        pageContent[i].style.display = "none"
+    for (let i = 0; i < divsContent.length; i++) {
+        divsContent[i].style.display = "none"
     }
 }
 // Call above function to hide divisions when opening page
 hideAllDivisions()
 
+// Hide menu, display "Go back" button & change page title
+function showDivision(division) {
+    division.style.display = "block"
+    goBackBtn.style.display = "block"
+    mainMenu.style.display = "none"
+}
+
+
+// <------------------------------- O T H E R -------------------------------->
 
 const mainMenu = document.getElementById("main-menu")
-
 
 // Get & configure the go back button
 const goBackBtn = document.getElementById("go-back-btn")
@@ -77,14 +89,6 @@ goBackBtn.addEventListener("click", function() {
     goBackBtn.style.display = "none"
     mainMenu.style.display = "block"
 })
-
-
-// Hide menu, display "Go back" button & change page title
-function showDivision(division) {
-    division.style.display = "block"
-    goBackBtn.style.display = "block"
-    mainMenu.style.display = "none"
-}
 
 
 // <############################# C O N T E N T ##############################>
@@ -136,7 +140,6 @@ professionalExperienceUl.innerHTML = professionalExperienceUlContent
 
 // <---------------------------- D I P L O M A S ----------------------------->
 
-// Diplomas list
 const diplomas = [
     {
         title:  "Computer science european bachelor",
@@ -158,7 +161,7 @@ const diplomas = [
     }
 ]
 
-// Taking container from the DOM
+// Take container from the DOM
 const diplomasUl = document.getElementById("diplomas-ul")
 
 // Reset diplomas list
@@ -180,7 +183,6 @@ diplomasUl.innerHTML = diplomasUlContent
 
 // <------------------------------ S K I L L S ------------------------------->
 
-// Skills list
 const skills = ['C', "Python", "HTML", "CSS", "JavaScript", "PHP"]
 
 // Taking container from the DOM
