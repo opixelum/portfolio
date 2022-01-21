@@ -4,7 +4,7 @@
 - [ ] Code contact form back-end (send email, count entries & save form data in db)
 - [ ] Use an international telephone input
 - [ ] Add link to download resume
-- [ ] Style input fields
+- [X] Style input fields
 - [X] Fix div size (pay attention for phone display)
 - [X] Make div overflow scrollable
 - [ ] Add transition between page with anime.js

@@ -48,6 +48,16 @@ ul {
     padding: 0;
 }
 
+#social-medias {
+    display: flex;
+    justify-content: center;
+}
+
+#social-medias img {
+    width: 40px;
+    margin: 15px;
+}
+
 /* Buttons */
 button, #send-btn {
     display: inline-block;
@@ -106,7 +116,6 @@ div {
     border-radius: 25px;
     background-color: rgba(60, 60, 60, .8);
     padding: 5px 35px 20px 35px;
-    width: 75%;
     height: 100%;
     overflow-y: auto;
 }
@@ -187,5 +196,5 @@ input, textarea {
 
 textarea {
     min-width: 250px;
-    size: 60vw;
+    width: 70vw;
 }
