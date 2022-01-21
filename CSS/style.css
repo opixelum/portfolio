@@ -49,7 +49,7 @@ ul {
 }
 
 /* Buttons */
-button {
+button, #send-btn {
     display: inline-block;
     background-color: rgba(70, 70, 70, .8);
     width: 325px;
@@ -63,6 +63,10 @@ button {
     border: none;
     transition-duration: .3s;
     z-index: 1;
+}
+
+#send-btn {
+    width: 300px;
 }
 
 button span {
@@ -88,7 +92,7 @@ button:hover span:after {
     right: 0;
 }
 
-button:hover {
+button:hover, #send-btn:hover {
     background-color: #666666;
 }
 
@@ -167,4 +171,21 @@ h3 {
 #go-back-btn:hover span:after {
     left: 0;
     right: 90px;
+}
+
+
+/* Input fields */
+
+input, textarea {
+    width: 250px;
+    background-color: rgba(70, 70, 70, .8);
+    border: none;
+    border-radius: 12px;
+    padding: 15px;
+    color: white;
+}
+
+textarea {
+    min-width: 250px;
+    size: 60vw;
 }
