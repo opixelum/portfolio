@@ -164,10 +164,10 @@ const diplomas = [
 // Take container from the DOM
 const diplomasUl = document.getElementById("diplomas-ul")
 
-// Reset diplomas list
+// Reset diplomas container content
 let diplomasUlContent = ""
 
-// Add diplomas to the list
+// Add diplomas to the container
 for (let i = 0; i < diplomas.length; i++) {
     diplomasUlContent += `
     <li>
@@ -181,6 +181,49 @@ for (let i = 0; i < diplomas.length; i++) {
 diplomasUl.innerHTML = diplomasUlContent 
 
 
+// <---------------------------- P R O J E C T S ----------------------------->
+
+const projects = [
+    {
+        title:"My Portfolio (this website)",
+        brief: "I define this website as a project because I'm " +
+               "particularlly proud of it and I will continue to update it " +
+               "through whole career.",
+        date : "Jan 2022 - Ongoing",
+        url  : "https://github.com/Opixelum/MyPortfolio"
+    },
+    {
+        title: "Website redesign",
+        brief: "This was a school project. We were a group of three " +
+               "students. It was our first website ever, fully hand-coded.", 
+        date : "Nov 2021 - Dec 2021",
+        url  : "https://github.com/Opixelum/ESGI-Web-Projet_Refonte",
+    }
+]
+
+// Taking container from the DOM
+const projectsUl = document.getElementById("projects-ul")
+
+// Reset projects container content
+let projectsUlContent = ""
+
+// Add projects to the container
+for (let i = 0; i < projects.length; i++) {
+    projectsUlContent += `
+    <li>
+      <h3>${projects[i].title}</h3>
+      <p>${projects[i].brief}<br><br>${projects[i].date}<br><br>
+          <p>*: required field</p>
+          <p>*: required field</p>
+      <a href="${projects[i].url}" target="_blank">GitHub repository</a>
+      </p>
+    </li>`
+}
+
+// Modify HTML with new projects list
+projectsUl.innerHTML = projectsUlContent
+
+
 // <------------------------------ S K I L L S ------------------------------->
 
 const skills = ['C', "Python", "HTML", "CSS", "JavaScript", "PHP"]
@@ -188,14 +231,12 @@ const skills = ['C', "Python", "HTML", "CSS", "JavaScript", "PHP"]
 // Taking container from the DOM
 const skillsUl = document.getElementById("skills-ul")
 
-// Reset skills list
+// Reset skills container content
 let skillsUlContent = ""
 
-// Add skills to the list
-for (let i = 0; i < skills.length; i++) {
-    skillsUlContent += `
-    <li><h3>${skills[i]}</h3></li>`
-}
+// Add skills to the container
+for (let i = 0; i < skills.length; i++)
+    skillsUlContent += `<li><h3>${skills[i]}</h3></li>`
 
 // Modify HTML with new skills list
 skillsUl.innerHTML = skillsUlContent 

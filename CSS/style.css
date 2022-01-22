@@ -76,7 +76,7 @@ button, #send-btn {
 }
 
 #send-btn {
-    width: 300px;
+    width: 250px;
 }
 
 button span {
@@ -118,6 +118,8 @@ div {
     padding: 5px 35px 20px 35px;
     height: 100%;
     overflow-y: auto;
+    width: 75vw;
+    max-width: 750px
 }
 
 h2 {
@@ -195,6 +197,8 @@ input, textarea {
 }
 
 textarea {
+    width: 80%;
     min-width: 250px;
-    width: 70vw;
+    height: 10vh;
+    resize: none;
 }
