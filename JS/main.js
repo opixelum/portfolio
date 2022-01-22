@@ -213,8 +213,6 @@ for (let i = 0; i < projects.length; i++) {
     <li>
       <h3>${projects[i].title}</h3>
       <p>${projects[i].brief}<br><br>${projects[i].date}<br><br>
-          <p>*: required field</p>
-          <p>*: required field</p>
       <a href="${projects[i].url}" target="_blank">GitHub repository</a>
       </p>
     </li>`
