@@ -104,6 +104,7 @@ button:hover span:after {
 
 button:hover, #send-btn:hover {
     background-color: #666666;
+    cursor: pointer;
 }
 
 button:active {
@@ -140,6 +141,10 @@ h3 {
 #about-div p {
     text-align: justify;
     text-justify: auto;
+}
+
+#projects-div a {
+    color: #8888ff;
 }
 
 

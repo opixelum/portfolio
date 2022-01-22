@@ -142,19 +142,25 @@ professionalExperienceUl.innerHTML = professionalExperienceUlContent
 
 const diplomas = [
     {
+        title:  "Computer science european master",
+        school: "ESGI Paris",
+        result: "Planned",
+        date:   "2024 - 2026"
+    },
+    {
         title:  "Computer science european bachelor",
         school: "ESGI Paris",
         result: "Ongoing",
         date:   "2021 - 2024"
     },
     {
-        title:  "Diplôme du baccalauréat",
+        title:  "French high school diploma",
         school: "LGT Robert Weinum Saint Martin",
         result: "Mention Très bien",
         date:   "2018 - 2021"
     },
     {
-        title:  "Diplôme National du Brevet des collèges",
+        title:  "French junior high school certificate",
         school: "Collège Jean Moulin Ambazac",
         result: "Mention Très bien",
         date:   "2017-2018"
@@ -188,7 +194,7 @@ const projects = [
         title:"My Portfolio (this website)",
         brief: "I define this website as a project because I'm " +
                "particularlly proud of it and I will continue to update it " +
-               "through whole career.",
+               "through my whole career.",
         date : "Jan 2022 - Ongoing",
         url  : "https://github.com/Opixelum/MyPortfolio"
     },
