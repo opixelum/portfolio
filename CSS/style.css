@@ -197,7 +197,7 @@ input, textarea {
 }
 
 textarea {
-    width: 80%;
+    width: 90%;
     min-width: 250px;
     height: 10vh;
     resize: none;
