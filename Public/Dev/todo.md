@@ -1,0 +1,13 @@
+- [ ] Improve readme (see Caleb Curry markdown tutorial)
+- [ ] Replace skills text by pictures
+- [ ] Code a secret page for website monitoring (see analytics, add content easily)
+- [X] Code contact form back-end (send email, count entries & save form data in db)
+- [ ] Use an international telephone input
+- [X] Add projects
+- [X] Style input fields
+- [X] Fix div size (pay attention for phone display)
+- [X] Make div overflow scrollable
+- [ ] Add transition between page with anime.js
+- [ ] Code refactoring
+- [X] Add "Projects"
+- [ ] Add effect on button release
