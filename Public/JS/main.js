@@ -8,6 +8,7 @@
  * @author Anto Benedetti (Opixelum)
  * @bug No known bugs.  */
 
+
 // <###################### F U N C T I O N N A L I T Y #######################>
 
 // <------------------------ C O N T A C T   F O R M ------------------------->
@@ -80,6 +81,7 @@ for (let i = 0; i < mainMenuBtns.length; i++) {
 
 // <--------------------------- D I V I S I O N S ---------------------------->
 
+
 // Get all divisions
 const aboutDiv = document.getElementById("about-div")
 const professionalExperienceDiv = document.getElementById("professional-experience-div")
@@ -90,28 +92,67 @@ const contactDiv = document.getElementById("contact-div")
 
 // Group all divisions in a single array
 const divsContent = [
-    aboutDiv,
-    professionalExperienceDiv,
-    diplomasDiv,
-    projectsDiv,
-    skillsDiv,
-    contactDiv
+    {
+        button: "about-btn",
+        content: aboutDiv,
+    },
+    {
+        button: "professional-experience-btn",
+        content: professionalExperienceDiv,
+    },
+    {
+        button: "diplomas-btn",
+        content: diplomasDiv,
+    },
+    {
+        button: "projects-btn",
+        content: projectsDiv,
+    },
+    {
+        button: "skills-btn",
+        content: skillsDiv,
+    },
+    {
+        button: "contact-btn",
+        content: contactDiv
+    }
 ]
 
 // Hide all divisions by setting their display to "none"
 function hideAllDivisions() {
     for (let i = 0; i < divsContent.length; i++) {
-        divsContent[i].style.display = "none"
+        divsContent[i].content.style.display = "none"
     }
 }
 // Call above function to hide divisions when opening page
 hideAllDivisions()
 
-// Hide menu, display "Go back" button & change page title
+
+// When button clicked, hide menu, display "Go back" button & change page title
 function showDivision(division) {
-    division.style.display = "block"
-    goBackBtn.style.display = "block"
-    mainMenu.style.display = "none"
+    // Swipe animation when main button clicked
+    const swipe = anime.timeline({
+        easing: "easeInQuad",
+        duration: 200,
+    })
+
+    swipe
+    .add({
+        targets: `#${division.button}:not(#go-back-btn)`,
+        translateX: -250,
+        opacity: 0
+    })
+    .add({
+        targets: `button:not(#go-back-btn)`,
+        translateX: -250,
+        opacity: 0
+    }, 200)
+
+    setTimeout(function() {
+        division.content.style.display = "block"
+        goBackBtn.style.display = "block"
+        mainMenu.style.display = "none"
+    }, 800)
 }
 
 
