@@ -26,6 +26,8 @@ canvas {
 
 
 h1 {
+    position: absolute;
+    transform: translateY(-300px);
     margin-top: 0;
     margin-bottom: 20px;
 }
@@ -48,9 +50,26 @@ ul {
     padding: 0;
 }
 
+li:not(#main-menu li){
+    background-color: #1a1c1e;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 10px;
+}
+
+
 #social-medias {
     display: flex;
     justify-content: center;
+    transform: translateY(100px);
+}
+
+#social-medias li {
+    display: inline;
+}
+
+#social-medias a {
+    text-decoration: none;
 }
 
 #social-medias img {
@@ -77,6 +96,23 @@ button, #send-btn {
 
 #send-btn {
     width: 250px;
+}
+
+div:not(#main-menu, #social-medias) {
+    border-radius: 25px;
+    background-color: rgba(60, 60, 60, .8);
+    padding: 5px 35px 20px 35px;
+    height: 100%;
+    overflow-y: auto;
+    width: 75vw;
+    max-width: 750px;
+    opacity: 0;
+    transform: translateY(-25px);
+}
+
+#main-menu {
+    border-radius: 25px;
+    transform: translateY(30px);
 }
 
 button span {
@@ -111,30 +147,13 @@ button:active {
     background-color: #333333;
 }
 
-/* Divisions */
 
-div {
-    border-radius: 25px;
-    background-color: rgba(60, 60, 60, .8);
-    padding: 5px 35px 20px 35px;
-    height: 100%;
-    overflow-y: auto;
-    width: 75vw;
-    max-width: 750px;
-    opacity: 0;
-    transform: translateX(250px)
-}
+/* Divisions */
 
 h2 {
     margin-bottom: 20px;
 }
 
-div li {
-    border-radius: 25px;
-    background-color: #202020;
-    padding: 10px;
-    margin: 10px;
-}
 
 h3 {
     margin-top: 10px;
@@ -171,6 +190,8 @@ h3 {
 
 #go-back-btn {
     display: none;
+    position: absolute;
+    transform: translateY(300px);
     width: 150px;
     margin-top: 30px;
 }

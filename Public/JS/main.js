@@ -94,26 +94,32 @@ const contactDiv = document.getElementById("contact-div")
 const divsContent = [
     {
         button: "about-btn",
+        id: "about-div",
         content: aboutDiv,
     },
     {
         button: "professional-experience-btn",
+        id: "professional-experience-div",
         content: professionalExperienceDiv,
     },
     {
         button: "diplomas-btn",
+        id: "diplomas-div",
         content: diplomasDiv,
     },
     {
         button: "projects-btn",
+        id: "projects-div",
         content: projectsDiv,
     },
     {
         button: "skills-btn",
+        id: "skills-div",
         content: skillsDiv,
     },
     {
         button: "contact-btn",
+        id: "contact-div",
         content: contactDiv
     }
 ]
@@ -139,20 +145,22 @@ function showDivision(division) {
     swipe
     .add({
         targets: `#${division.button}:not(#go-back-btn)`,
-        translateX: -250,
         opacity: 0
     })
     .add({
-        targets: `button:not(#go-back-btn)`,
-        translateX: -250,
+        targets: `button:not(#go-back-btn), #social-medias`,
         opacity: 0
     }, 200)
+    .add({
+        targets: `#${division.id}`,
+        opacity: 1
+    }, 700)
 
     setTimeout(function() {
         division.content.style.display = "block"
         goBackBtn.style.display = "block"
         mainMenu.style.display = "none"
-    }, 800)
+    }, 600)
 }
 
 
