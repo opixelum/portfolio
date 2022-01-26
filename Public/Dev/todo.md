@@ -8,6 +8,6 @@
 - [X] Fix div size (pay attention for phone display)
 - [X] Make div overflow scrollable
 - [ ] Add transition between page with anime.js
+- [ ] Add transition for "go back button"
 - [ ] Code refactoring
 - [X] Add "Projects"
-- [ ] Add effect on button release
