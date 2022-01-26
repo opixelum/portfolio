@@ -79,7 +79,6 @@ for (let i = 0; i < mainMenuBtns.length; i++) {
 
 // <--------------------------- D I V I S I O N S ---------------------------->
 
-
 // Get all divisions
 const aboutDiv = document.getElementById("about-div")
 const professionalExperienceDiv = document.getElementById("professional-experience-div")
