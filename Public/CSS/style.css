@@ -17,8 +17,6 @@ body {
 
 canvas {
     position: fixed;
-    width: 100%;
-    height: 100%;
 }
 
 
@@ -27,9 +25,7 @@ canvas {
 
 h1 {
     position: absolute;
-    transform: translateY(-300px);
-    margin-top: 0;
-    margin-bottom: 20px;
+    transform: translateY(-325px);
 }
 
 
@@ -50,7 +46,7 @@ ul {
     padding: 0;
 }
 
-li:not(#main-menu li){
+li:not(#main-menu li, #social-medias li){
     background-color: #1a1c1e;
     border-radius: 20px;
     padding: 5px;
@@ -62,6 +58,7 @@ li:not(#main-menu li){
     display: flex;
     justify-content: center;
     transform: translateY(100px);
+    z-index: 1;
 }
 
 #social-medias li {
@@ -107,12 +104,11 @@ div:not(#main-menu, #social-medias) {
     width: 75vw;
     max-width: 750px;
     opacity: 0;
-    transform: translateY(-25px);
+    z-index: 1;
 }
 
 #main-menu {
     border-radius: 25px;
-    transform: translateY(30px);
 }
 
 button span {
@@ -191,9 +187,8 @@ h3 {
 #go-back-btn {
     display: none;
     position: absolute;
-    transform: translateY(300px);
+    transform: translateY(350px);
     width: 150px;
-    margin-top: 30px;
 }
 
 #go-back-btn span:after {
@@ -229,4 +224,15 @@ textarea {
     min-width: 250px;
     height: 10vh;
     resize: none;
+}
+
+
+@media screen and (min-width: 400px) {
+    main {
+        transform: translateY(30px)
+    }
+
+    #go-back-btn {
+        transform: translateY(375px);
+    }
 }

@@ -17,7 +17,6 @@ const contactForm = document.getElementById("contact-form")
 
 const name = document.getElementById("name")
 const email = document.getElementById("email")
-const phone = document.getElementById("phone")
 const message = document.getElementById("message")
 
 contactForm.addEventListener("submit", (e) => {
@@ -25,7 +24,7 @@ contactForm.addEventListener("submit", (e) => {
     
     const formData = {
         email: email.value,
-        subject: `MyPortfolio | Message from ${name.value} (${phone.value})`,
+        subject: `MyPortfolio | Message from ${name.value}`,
         message: message.value
     }
 
@@ -38,7 +37,6 @@ contactForm.addEventListener("submit", (e) => {
             alert("Email sent")
             name.value = ""
             email.value = ""
-            phone.value = ""
             message.value = ""
         } else {
             alert("Something went wrong.")
@@ -152,7 +150,7 @@ function showDivision(division) {
         opacity: 0
     }, 200)
     .add({
-        targets: `#${division.id}`,
+        targets: `#${division.id}, #go-back-btn`,
         opacity: 1
     }, 700)
 
@@ -160,6 +158,7 @@ function showDivision(division) {
         division.content.style.display = "block"
         goBackBtn.style.display = "block"
         mainMenu.style.display = "none"
+        socialMedias.style.display = "none"
     }, 600)
 }
 
@@ -167,13 +166,38 @@ function showDivision(division) {
 // <------------------------------- O T H E R -------------------------------->
 
 const mainMenu = document.getElementById("main-menu")
+const socialMedias = document.querySelector("#social-medias")
 
 // Get & configure the go back button
 const goBackBtn = document.getElementById("go-back-btn")
 goBackBtn.addEventListener("click", function() {
-    hideAllDivisions()
-    goBackBtn.style.display = "none"
-    mainMenu.style.display = "block"
+    const swipe = anime.timeline({
+        easing: "easeInQuad",
+        duration: 200,
+    })
+
+    swipe
+    .add({
+        targets: `#go-back-btn`,
+        opacity: 0
+    })
+    .add({
+        targets: `div`,
+        opacity: 0
+    }, 350)
+    .add({
+        targets: `#main-menu, button:not(#go-back-btn), #social-medias`,
+        opacity: 1
+    }, 700)
+
+    setTimeout(function() {
+        goBackBtn.style.display = "none"
+        mainMenu.style.display = "block"
+        for (let i = 0; i < divsContent.length; i++) {
+            divsContent[i].content.style.display = "none"
+        }
+        socialMedias.style.display = "flex"
+    }, 600)
 })
 
 
