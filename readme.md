@@ -1,8 +1,5 @@
 # MyPortflio website
 
-http://localhost/MyPortfolio/
-file:///opt/lampp/htdocs/MyPortfolio/index.html
-
 I want to make a portflio to showcase my projects, experience and talk about
 me. I want to build a modern, well designed portofolio, with a code-oriented
 interface.
@@ -18,19 +15,12 @@ experience.
 - About me
 - Professional experience
 - Diplomas
+- Project
 - Skills
-- Projects
 - Contact
 
-## Technologies to use
+## Used technologies
 
 - HTML
 - CSS
 - Javascript
-- PHP
-- Check for best framework
-
-## Future goal
-
-- Host the website on the blockchain;
-- Having a french and an english versions.

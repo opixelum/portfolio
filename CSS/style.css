@@ -219,3 +219,9 @@ textarea {
     height: 10vh;
     resize: none;
 }
+
+@media screen and (max-height: 525px) {
+     #main-menu button {
+        height: 35px;
+    }
+}
