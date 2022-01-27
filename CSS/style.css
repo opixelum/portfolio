@@ -9,7 +9,7 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     height: 100%;
     margin: 0;
@@ -20,12 +20,9 @@ canvas {
 }
 
 
-/* Header */
-
-
 h1 {
     position: absolute;
-    transform: translateY(-325px);
+    margin-bottom: 82vh;
 }
 
 
@@ -57,7 +54,6 @@ li:not(#main-menu li, #social-medias li){
 #social-medias {
     display: flex;
     justify-content: center;
-    transform: translateY(100px);
     z-index: 1;
 }
 
@@ -186,8 +182,6 @@ h3 {
 
 #go-back-btn {
     display: none;
-    position: absolute;
-    transform: translateY(350px);
     width: 150px;
 }
 
@@ -224,15 +218,4 @@ textarea {
     min-width: 250px;
     height: 10vh;
     resize: none;
-}
-
-
-@media screen and (min-width: 400px) {
-    main {
-        transform: translateY(30px)
-    }
-
-    #go-back-btn {
-        transform: translateY(375px);
-    }
 }
