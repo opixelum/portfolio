@@ -157,9 +157,12 @@ h3 {
 }
 
 #projects-div a {
-    color: #8888ff;
+    color: #62c3f0;
 }
 
+#projects-div a:visited {
+    color: #ac79fd;
+}
 
 /* Scrollbar */
 

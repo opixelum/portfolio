@@ -312,7 +312,7 @@ const projects = [
         brief: "This was a school project. We were a group of three " +
                "students. It was our first website ever, fully hand-coded.", 
         date : "Nov 2021 - Dec 2021",
-        url  : "https://github.com/Opixelum/ESGI-Web-Projet_Refonte",
+        url  : "https://opixelum.github.io/Le-Murat-V2/",
     }
 ]
 
@@ -328,7 +328,7 @@ for (let i = 0; i < projects.length; i++) {
     <li>
       <h3>${projects[i].title}</h3>
       <p>${projects[i].brief}<br><br>${projects[i].date}<br><br>
-      <a href="${projects[i].url}" target="_blank">GitHub repository</a>
+      <a href="${projects[i].url}" target="_blank">Click here to learn more</a>
       </p>
     </li>`
 }
