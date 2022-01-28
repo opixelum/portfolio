@@ -10,14 +10,13 @@ resume). I also want to put my portfolio's link on all my medias.
 The whole website will contain only one page, in order to have an interactive
 experience.
 
-## What to include
+## Website plan
 
 - About me
-- Professional experience
+- Job experiences
 - Diplomas
 - Project
 - Skills
-- Contact
 
 ## Used technologies
 
