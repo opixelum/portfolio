@@ -227,6 +227,14 @@ textarea {
         font-size: smaller;
     }
 
+    h1 {
+        top: 1%;
+    }
+
+    section {
+        margin-bottom: 2%;
+    }
+
     #main-menu button {
         height: 35px;
     }
