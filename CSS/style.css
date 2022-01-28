@@ -19,11 +19,9 @@ canvas {
     position: fixed;
 }
 
-
 h1 {
     position: absolute;
-    margin-bottom: 82vh;
-    margin-bottom: calc(var(--vh, 1vh) * 82);
+    top: 4%;
 }
 
 
@@ -225,9 +223,11 @@ textarea {
 }
 
 @media screen and (max-height: 525px) {
-     #main-menu button {
-        height: 35px;
+    html {
         font-size: smaller;
     }
 
+    #main-menu button {
+        height: 35px;
+    }
 }

@@ -200,19 +200,6 @@ goBackBtn.addEventListener("click", function() {
 })
 
 
-// Fix the "vh" mesure unit compatibility with Safari
-if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
-    const title = document.querySelector("h1")
-
-    // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
-    const vh = window.innerHeight * 0.01
-
-    // Then we set the value in the --vh custom property to the root of the document
-    title.style.marginBottom = "calc(var(--vh, 1vh) * 82);"
-    title.style.setProperty('--vh', `${vh}px`)
-}
-
-
 // <############################# C O N T E N T ##############################>
 
 // <------------- P R O F E S S I O N A L   E X P E R I E N C E -------------->
