@@ -228,11 +228,11 @@ textarea {
     }
 
     h1 {
-        top: 1%;
+        top: 0;
     }
 
     section {
-        margin-bottom: 2%;
+        margin-bottom: 5%;
     }
 
     #main-menu button {
