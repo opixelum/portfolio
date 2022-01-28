@@ -13,38 +13,10 @@
 
 // <------------------------ C O N T A C T   F O R M ------------------------->
 
-const contactForm = document.getElementById("contact-form")
-
 const name = document.getElementById("name")
 const email = document.getElementById("email")
 const message = document.getElementById("message")
 
-contactForm.addEventListener("submit", (e) => {
-    e.preventDefault()
-    
-    const formData = {
-        email: email.value,
-        subject: `MyPortfolio | Message from ${name.value}`,
-        message: message.value
-    }
-
-    let xhr = new XMLHttpRequest()
-    xhr.open("POST", '/')
-    xhr.setRequestHeader("content-type", "application/json")
-    xhr.onload = function() {
-        console.log(xhr.responseText)
-        if (xhr.responseText == "success") {
-            alert("Email sent")
-            name.value = ""
-            email.value = ""
-            message.value = ""
-        } else {
-            alert("Something went wrong.")
-        }
-    }
-
-    xhr.send(JSON.stringify(formData))
-})
 
 // <####################### I N T E R A C T I V I T Y ########################>
 
@@ -56,7 +28,6 @@ const jobExperiencesBtn = document.getElementById("job-experiences-btn")
 const diplomasBtn = document.getElementById("diplomas-btn")
 const skillsBtn = document.getElementById("skills-btn")
 const projectsBtn = document.getElementById("projects-btn")
-const contactBtn = document.getElementById("contact-btn")
 
 // Group all divisions in a single array
 const mainMenuBtns = [
@@ -64,8 +35,7 @@ const mainMenuBtns = [
     jobExperiencesBtn,
     diplomasBtn,
     projectsBtn,
-    skillsBtn,
-    contactBtn
+    skillsBtn
 ]
 
 // Add event listeners to all main menu buttons
@@ -85,7 +55,6 @@ const jobExperiencesDiv = document.getElementById("job-experiences-div")
 const diplomasDiv = document.getElementById("diplomas-div")
 const projectsDiv = document.getElementById("projects-div")
 const skillsDiv = document.getElementById("skills-div")
-const contactDiv = document.getElementById("contact-div")
 
 // Group all divisions in a single array
 const divsContent = [
@@ -114,11 +83,6 @@ const divsContent = [
         id: "skills-div",
         content: skillsDiv,
     },
-    {
-        button: "contact-btn",
-        id: "contact-div",
-        content: contactDiv
-    }
 ]
 
 // Hide all divisions by setting their display to "none"

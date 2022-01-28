@@ -23,4 +23,4 @@ experience.
 
 - HTML
 - CSS
-- Javascript
+- JavaScript
