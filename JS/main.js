@@ -52,7 +52,7 @@ contactForm.addEventListener("submit", (e) => {
 
 // Get all main menu buttons
 const aboutBtn = document.getElementById("about-btn")
-const professionalExperienceBtn = document.getElementById("professional-experience-btn")
+const jobExperiencesBtn = document.getElementById("job-experiences-btn")
 const diplomasBtn = document.getElementById("diplomas-btn")
 const skillsBtn = document.getElementById("skills-btn")
 const projectsBtn = document.getElementById("projects-btn")
@@ -61,7 +61,7 @@ const contactBtn = document.getElementById("contact-btn")
 // Group all divisions in a single array
 const mainMenuBtns = [
     aboutBtn,
-    professionalExperienceBtn,
+    jobExperiencesBtn,
     diplomasBtn,
     projectsBtn,
     skillsBtn,
@@ -81,7 +81,7 @@ for (let i = 0; i < mainMenuBtns.length; i++) {
 
 // Get all divisions
 const aboutDiv = document.getElementById("about-div")
-const professionalExperienceDiv = document.getElementById("professional-experience-div")
+const jobExperiencesDiv = document.getElementById("job-experiences-div")
 const diplomasDiv = document.getElementById("diplomas-div")
 const projectsDiv = document.getElementById("projects-div")
 const skillsDiv = document.getElementById("skills-div")
@@ -95,9 +95,9 @@ const divsContent = [
         content: aboutDiv,
     },
     {
-        button: "professional-experience-btn",
-        id: "professional-experience-div",
-        content: professionalExperienceDiv,
+        button: "job-experiences-btn",
+        id: "job-experiences-div",
+        content: jobExperiencesDiv,
     },
     {
         button: "diplomas-btn",
@@ -205,7 +205,7 @@ goBackBtn.addEventListener("click", function() {
 // <------------- P R O F E S S I O N A L   E X P E R I E N C E -------------->
 
 // Job list
-const professionalExperience = [
+const jobExperiences = [
     {
         title:   "Web development assistant",
         company: "Kreoli SARL",
@@ -227,24 +227,24 @@ const professionalExperience = [
 ]
 
 // Taking container from the DOM
-const professionalExperienceUl = document.getElementById("professional-experience-ul")
+const jobExperiencesUl = document.getElementById("job-experiences-ul")
 
 // Reset jobs list
-let professionalExperienceUlContent = ""
+let jobExperiencesUlContent = ""
 
 // Add jobs to the list
-for (let i = 0; i < professionalExperience.length; i++) {
-    professionalExperienceUlContent += `
+for (let i = 0; i < jobExperiences.length; i++) {
+    jobExperiencesUlContent += `
     <li>
-      <h3>${professionalExperience[i].title}</h3>
-      <p>${professionalExperience[i].company}<br>
-      ${professionalExperience[i].place}<br>
-      ${professionalExperience[i].date}</p>
+      <h3>${jobExperiences[i].title}</h3>
+      <p>${jobExperiences[i].company}<br>
+      ${jobExperiences[i].place}<br>
+      ${jobExperiences[i].date}</p>
     </li>`
 }
 
 // Modify HTML with new jobs list
-professionalExperienceUl.innerHTML = professionalExperienceUlContent
+jobExperiencesUl.innerHTML = jobExperiencesUlContent
 
 
 // <---------------------------- D I P L O M A S ----------------------------->
