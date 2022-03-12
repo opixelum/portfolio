@@ -303,7 +303,16 @@ projectsUl.innerHTML = projectsUlContent
 
 // <------------------------------ S K I L L S ------------------------------->
 
-const skills = ['C', "Python", "HTML", "CSS", "JavaScript", "PHP"]
+const skills = [
+    "HTML/CSS (Bootstrap)",
+    "JavaScript (React, NodeJS)",
+    "Solidity (Web3.js)",
+    "Git & GitHub",
+    "PHP",
+    "SQL",
+    "C/C++",
+    "Python"
+]
 
 // Taking container from the DOM
 const skillsUl = document.getElementById("skills-ul")
