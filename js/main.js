@@ -1,10 +1,10 @@
 /**
  * @file main.js
  * @brief Script for index.html.
- * 
+ *
  * This script builds the website dynamically, by adding HTML content and
  * making effect. It permits to be an interactive website.
- * 
+ *
  * @author Anto Benedetti (Opixelum)
  * @bug No known bugs.  */
 
@@ -31,19 +31,19 @@ const projectsBtn = document.getElementById("projects-btn")
 
 // Group all divisions in a single array
 const mainMenuBtns = [
-    aboutBtn,
-    jobExperiencesBtn,
-    diplomasBtn,
-    projectsBtn,
-    skillsBtn
+  aboutBtn,
+  jobExperiencesBtn,
+  diplomasBtn,
+  projectsBtn,
+  skillsBtn
 ]
 
 // Add event listeners to all main menu buttons
 for (let i = 0; i < mainMenuBtns.length; i++) {
-    mainMenuBtns[i].addEventListener("click", function() {
-        hideAllDivisions()
-        showDivision(divsContent[i])
-    })
+  mainMenuBtns[i].addEventListener("click", function() {
+    hideAllDivisions()
+    showDivision(divsContent[i])
+  })
 }
 
 
@@ -58,38 +58,38 @@ const skillsDiv = document.getElementById("skills-div")
 
 // Group all divisions in a single array
 const divsContent = [
-    {
-        button: "about-btn",
-        id: "about-div",
-        content: aboutDiv,
-    },
-    {
-        button: "job-experiences-btn",
-        id: "job-experiences-div",
-        content: jobExperiencesDiv,
-    },
-    {
-        button: "diplomas-btn",
-        id: "diplomas-div",
-        content: diplomasDiv,
-    },
-    {
-        button: "projects-btn",
-        id: "projects-div",
-        content: projectsDiv,
-    },
-    {
-        button: "skills-btn",
-        id: "skills-div",
-        content: skillsDiv,
-    },
+  {
+    button: "about-btn",
+    id: "about-div",
+    content: aboutDiv,
+  },
+  {
+    button: "job-experiences-btn",
+    id: "job-experiences-div",
+    content: jobExperiencesDiv,
+  },
+  {
+    button: "diplomas-btn",
+    id: "diplomas-div",
+    content: diplomasDiv,
+  },
+  {
+    button: "projects-btn",
+    id: "projects-div",
+    content: projectsDiv,
+  },
+  {
+    button: "skills-btn",
+    id: "skills-div",
+    content: skillsDiv,
+  },
 ]
 
 // Hide all divisions by setting their display to "none"
 function hideAllDivisions() {
-    for (let i = 0; i < divsContent.length; i++) {
-        divsContent[i].content.style.display = "none"
-    }
+  for (let i = 0; i < divsContent.length; i++) {
+    divsContent[i].content.style.display = "none"
+  }
 }
 // Call above function to hide divisions when opening page
 hideAllDivisions()
@@ -97,32 +97,32 @@ hideAllDivisions()
 
 // When button clicked, hide menu, display "Go back" button & change page title
 function showDivision(division) {
-    // Swipe animation when main button clicked
-    const swipe = anime.timeline({
-        easing: "easeInQuad",
-        duration: 200,
-    })
+  // Swipe animation when main button clicked
+  const swipe = anime.timeline({
+    easing: "easeInQuad",
+    duration: 200,
+  })
 
-    swipe
+  swipe
     .add({
-        targets: `#${division.button}:not(#go-back-btn)`,
-        opacity: 0
+      targets: `#${division.button}:not(#go-back-btn)`,
+      opacity: 0
     })
     .add({
-        targets: `button:not(#go-back-btn), #social-medias`,
-        opacity: 0
+      targets: `button:not(#go-back-btn), #social-medias`,
+      opacity: 0
     }, 200)
     .add({
-        targets: `#${division.id}, #go-back-btn`,
-        opacity: 1
+      targets: `#${division.id}, #go-back-btn`,
+      opacity: 1
     }, 700)
 
-    setTimeout(function() {
-        division.content.style.display = "block"
-        goBackBtn.style.display = "block"
-        mainMenu.style.display = "none"
-        socialMedias.style.display = "none"
-    }, 600)
+  setTimeout(function() {
+    division.content.style.display = "block"
+    goBackBtn.style.display = "block"
+    mainMenu.style.display = "none"
+    socialMedias.style.display = "none"
+  }, 600)
 }
 
 
@@ -134,33 +134,33 @@ const socialMedias = document.querySelector("#social-medias")
 // Get & configure the go back button
 const goBackBtn = document.getElementById("go-back-btn")
 goBackBtn.addEventListener("click", function() {
-    const swipe = anime.timeline({
-        easing: "easeInQuad",
-        duration: 200,
-    })
+  const swipe = anime.timeline({
+    easing: "easeInQuad",
+    duration: 200,
+  })
 
-    swipe
+  swipe
     .add({
-        targets: `#go-back-btn`,
-        opacity: 0
+      targets: `#go-back-btn`,
+      opacity: 0
     })
     .add({
-        targets: `div`,
-        opacity: 0
+      targets: `div`,
+      opacity: 0
     }, 350)
     .add({
-        targets: `#main-menu, button:not(#go-back-btn), #social-medias`,
-        opacity: 1
+      targets: `#main-menu, button:not(#go-back-btn), #social-medias`,
+      opacity: 1
     }, 700)
 
-    setTimeout(function() {
-        goBackBtn.style.display = "none"
-        mainMenu.style.display = "block"
-        for (let i = 0; i < divsContent.length; i++) {
-            divsContent[i].content.style.display = "none"
-        }
-        socialMedias.style.display = "flex"
-    }, 600)
+  setTimeout(function() {
+    goBackBtn.style.display = "none"
+    mainMenu.style.display = "block"
+    for (let i = 0; i < divsContent.length; i++) {
+      divsContent[i].content.style.display = "none"
+    }
+    socialMedias.style.display = "flex"
+  }, 600)
 })
 
 
@@ -170,24 +170,24 @@ goBackBtn.addEventListener("click", function() {
 
 // Job list
 const jobExperiences = [
-    {
-        title:   "Web development assistant",
-        company: "Kreoli SARL",
-        place:   "Saint Martin",
-        date:    "April 2019"
-    },
-    {
-        title:   "Video games sector sales intern",
-        company: "FNAC SA",
-        place:   "Limoges",
-        date:    "January 2018"
-    },
-    {
-        title:   "IT technician",
-        company: "Kreoli SARL",
-        place:   "Saint Martin",
-        date:    "Mars 2017"
-    }
+  {
+    title: "Web development assistant",
+    company: "Kreoli SARL",
+    place: "Saint Martin",
+    date: "April 2019"
+  },
+  {
+    title: "Video games sector sales intern",
+    company: "FNAC SA",
+    place: "Limoges",
+    date: "January 2018"
+  },
+  {
+    title: "IT technician",
+    company: "Kreoli SARL",
+    place: "Saint Martin",
+    date: "Mars 2017"
+  }
 ]
 
 // Taking container from the DOM
@@ -198,7 +198,7 @@ let jobExperiencesUlContent = ""
 
 // Add jobs to the list
 for (let i = 0; i < jobExperiences.length; i++) {
-    jobExperiencesUlContent += `
+  jobExperiencesUlContent += `
     <li>
       <h3>${jobExperiences[i].title}</h3>
       <p>${jobExperiences[i].company}<br>
@@ -214,30 +214,30 @@ jobExperiencesUl.innerHTML = jobExperiencesUlContent
 // <---------------------------- D I P L O M A S ----------------------------->
 
 const diplomas = [
-    {
-        title:  "Computer science european master",
-        school: "ESGI Paris",
-        result: "Planned",
-        date:   "2024 - 2026"
-    },
-    {
-        title:  "Computer science european bachelor",
-        school: "ESGI Paris",
-        result: "Ongoing",
-        date:   "2021 - 2024"
-    },
-    {
-        title:  "French high school diploma",
-        school: "LGT Robert Weinum Saint Martin",
-        result: "Mention Très bien",
-        date:   "2018 - 2021"
-    },
-    {
-        title:  "French junior high school certificate",
-        school: "Collège Jean Moulin Ambazac",
-        result: "Mention Très bien",
-        date:   "2017-2018"
-    }
+  {
+    title: "Computer science european master",
+    school: "ESGI Paris",
+    result: "Planned",
+    date: "2024 - 2026"
+  },
+  {
+    title: "Computer science european bachelor",
+    school: "ESGI Paris",
+    result: "Ongoing",
+    date: "2021 - 2024"
+  },
+  {
+    title: "French high school diploma",
+    school: "LGT Robert Weinum Saint Martin",
+    result: "Mention Très bien",
+    date: "2018 - 2021"
+  },
+  {
+    title: "French junior high school certificate",
+    school: "Collège Jean Moulin Ambazac",
+    result: "Mention Très bien",
+    date: "2017-2018"
+  }
 ]
 
 // Take container from the DOM
@@ -248,7 +248,7 @@ let diplomasUlContent = ""
 
 // Add diplomas to the container
 for (let i = 0; i < diplomas.length; i++) {
-    diplomasUlContent += `
+  diplomasUlContent += `
     <li>
       <h3>${diplomas[i].title}</h3>
       <p>${diplomas[i].school}<br>${diplomas[i].result}<br>
@@ -257,27 +257,27 @@ for (let i = 0; i < diplomas.length; i++) {
 }
 
 // Modify HTML with new diplomas list
-diplomasUl.innerHTML = diplomasUlContent 
+diplomasUl.innerHTML = diplomasUlContent
 
 
 // <---------------------------- P R O J E C T S ----------------------------->
 
 const projects = [
-    {
-        title:"My Portfolio (this website)",
-        brief: "I define this website as a project because I'm " +
-               "particularlly proud of it and I will continue to update it " +
-               "through my whole career.",
-        date : "Jan 2022 - Ongoing",
-        url  : "https://github.com/Opixelum/MyPortfolio"
-    },
-    {
-        title: "Website redesign",
-        brief: "This was a school project. We were a group of three " +
-               "students. It was our first website ever, fully hand-coded.", 
-        date : "Nov 2021 - Dec 2021",
-        url  : "https://opixelum.github.io/Le-Murat-V2/",
-    }
+  {
+    title: "My Portfolio (this website)",
+    brief: "I define this website as a project because I'm " +
+      "particularlly proud of it and I will continue to update it " +
+      "through my whole career.",
+    date: "Jan 2022 - Ongoing",
+    url: "https://github.com/Opixelum/MyPortfolio"
+  },
+  {
+    title: "Website redesign",
+    brief: "This was a school project. We were a group of three " +
+      "students. It was our first website ever, fully hand-coded.",
+    date: "Nov 2021 - Dec 2021",
+    url: "https://opixelum.github.io/Le-Murat-V2/",
+  }
 ]
 
 // Taking container from the DOM
@@ -288,7 +288,7 @@ let projectsUlContent = ""
 
 // Add projects to the container
 for (let i = 0; i < projects.length; i++) {
-    projectsUlContent += `
+  projectsUlContent += `
     <li>
       <h3>${projects[i].title}</h3>
       <p>${projects[i].brief}<br><br>${projects[i].date}<br><br>
@@ -304,14 +304,14 @@ projectsUl.innerHTML = projectsUlContent
 // <------------------------------ S K I L L S ------------------------------->
 
 const skills = [
-    "HTML/CSS (Bootstrap)",
-    "JavaScript (React, NodeJS)",
-    "Solidity (Web3.js)",
-    "Git & GitHub",
-    "PHP",
-    "SQL",
-    "C/C++",
-    "Python"
+  "HTML/CSS (Bootstrap)",
+  "JavaScript (React, NodeJS)",
+  "Solidity (Web3.js)",
+  "Git & GitHub",
+  "PHP",
+  "SQL",
+  "C/C++",
+  "Python"
 ]
 
 // Taking container from the DOM
@@ -322,7 +322,7 @@ let skillsUlContent = ""
 
 // Add skills to the container
 for (let i = 0; i < skills.length; i++)
-    skillsUlContent += `<li><h3>${skills[i]}</h3></li>`
+  skillsUlContent += `<li><h3>${skills[i]}</h3></li>`
 
 // Modify HTML with new skills list
 skillsUl.innerHTML = skillsUlContent 
