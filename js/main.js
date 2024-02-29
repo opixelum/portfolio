@@ -171,22 +171,37 @@ goBackBtn.addEventListener("click", function() {
 // Job list
 const jobExperiences = [
   {
-    title: "Web development assistant",
-    company: "Kreoli SARL",
-    place: "Saint Martin",
-    date: "April 2019"
+    title: "Blochain engineer & researcher (apprenticeship)",
+    company: "CEA",
+    place: "Paris",
+    date: "September 2022 - September 2024",
+    tasks: [
+      "Scientific paper on the computational resource consumption of several smart contract proxy patterns",
+      "Blockchain - based data traceability solutions",
+      "Interactive map to simulate a network of blockchain nodes & weather sensors and calculate its energy consumption",
+      "Experimentation with tools and working methods to establish a common laboratory library"
+    ]
   },
   {
-    title: "Video games sector sales intern",
-    company: "FNAC SA",
-    place: "Limoges",
-    date: "January 2018"
+    title: "Web 3 developer (internship)",
+    company: "Neofacto",
+    place: "Paris",
+    date: "May 2022 - August 2022",
+    tasks: [
+      "Web 3 application for automating DCA investments in decentralized finance"
+    ]
   },
   {
-    title: "IT technician",
-    company: "Kreoli SARL",
-    place: "Saint Martin",
-    date: "Mars 2017"
+    title: "Blockchain developer (freelance)",
+    company: "Feature",
+    place: "Paris",
+    date: "March 2022 - July 2022",
+    tasks: [
+      "Optimization of existing smart contracts",
+      "Testing smart contracts",
+      "Scripting for CI on GitHub",
+      "Writing documentation on GitBook"
+    ]
   }
 ]
 
@@ -196,14 +211,27 @@ const jobExperiencesUl = document.getElementById("job-experiences-ul")
 // Reset jobs list
 let jobExperiencesUlContent = ""
 
+// Build tasks lists for each job
+let tasksPerJob = []
+
+for (let i = 0; i < jobExperiences.length; i++) {
+  let tasks = ""
+  const length = jobExperiences[i].tasks.length
+  for (let j = 0; j < length; j++) {
+    tasks += `<li>${jobExperiences[i].tasks[j]}${j == length - 1 ? "." : ";"}</li>`
+  }
+  tasksPerJob.push(tasks)
+}
+
 // Add jobs to the list
 for (let i = 0; i < jobExperiences.length; i++) {
   jobExperiencesUlContent += `
-    <li>
+    <li id="job-experience-li">
       <h3>${jobExperiences[i].title}</h3>
       <p>${jobExperiences[i].company}<br>
       ${jobExperiences[i].place}<br>
       ${jobExperiences[i].date}</p>
+      <ul>${tasksPerJob[i]}</ul>
     </li>`
 }
 

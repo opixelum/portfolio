@@ -36,7 +36,11 @@ main {
     max-height: 65%;
 }
 
-ul {
+#job-experience-li ul {
+  text-align: left;
+}
+
+ul:not(#job-experience-li ul) {
     list-style-type: none;
     margin: 0;
     padding: 0;
