@@ -264,19 +264,34 @@ diplomasUl.innerHTML = diplomasUlContent
 
 const projects = [
   {
-    title: "My Portfolio (this website)",
-    brief: "I define this website as a project because I'm " +
-      "particularlly proud of it and I will continue to update it " +
-      "through my whole career.",
-    date: "Jan 2022 - Ongoing",
-    url: "https://github.com/Opixelum/MyPortfolio"
+    title: "Convopy",
+    brief: "Convolutional neural network for image classification.",
+    date: "2024",
+    url: "https://github.com/opixelum/convopy",
   },
   {
-    title: "Website redesign",
-    brief: "This was a school project. We were a group of three " +
-      "students. It was our first website ever, fully hand-coded.",
-    date: "Nov 2021 - Dec 2021",
-    url: "https://opixelum.github.io/Le-Murat-V2/",
+    title: "Opixelib",
+    brief: "Personal, independent, multi-language library with sorting, math and artificial intelligence modules.",
+    date: "2024",
+    url: "https://github.com/opixelum/opixelib",
+  },
+  {
+    title: "Java Simple Neural Network",
+    brief: "First implementation of a neural network in Java for easy tasks.",
+    date: "2023",
+    url: "https://github.com/opixelum/java-simple-neural-network"
+  },
+  {
+    title: "ChatGPT CLI",
+    brief: "Command-line interface for ChatGPT.",
+    date: "2023",
+    url: "https://github.com/opixelum/chatgpt-cli",
+  },
+  {
+    title: "Vault",
+    brief: "Password manager developed in C.",
+    date: "2023",
+    url: "https://github.com/opixelum/vault",
   }
 ]
 
