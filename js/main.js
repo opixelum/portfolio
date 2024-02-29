@@ -304,14 +304,13 @@ projectsUl.innerHTML = projectsUlContent
 // <------------------------------ S K I L L S ------------------------------->
 
 const skills = [
-  "HTML/CSS (Bootstrap)",
-  "JavaScript (React, NodeJS)",
-  "Solidity (Web3.js)",
-  "Git & GitHub",
-  "PHP",
-  "SQL",
-  "C/C++",
-  "Python"
+  "Rust",
+  "C",
+  "Solidity",
+  "Python",
+  "TypeScript",
+  "TensorFlow",
+  "Deep Learning"
 ]
 
 // Taking container from the DOM
