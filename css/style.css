@@ -154,16 +154,16 @@ h3 {
     margin-top: 10px;
 }
 
-#about-div p {
+#about-me-div p {
     text-align: justify;
     text-justify: auto;
 }
 
-#projects-div a {
+#personal-projects-div a {
     color: #62c3f0;
 }
 
-#projects-div a:visited {
+#personal-projects-div a:visited {
     color: #ac79fd;
 }
 
