@@ -23,18 +23,18 @@ const message = document.getElementById("message")
 // <------------------- M A I N   M E N U   B U T T O N S -------------------->
 
 // Get all main menu buttons
-const aboutBtn = document.getElementById("about-btn")
+const aboutMeBtn = document.getElementById("about-me-btn")
 const jobExperiencesBtn = document.getElementById("job-experiences-btn")
 const diplomasBtn = document.getElementById("diplomas-btn")
 const skillsBtn = document.getElementById("skills-btn")
-const projectsBtn = document.getElementById("projects-btn")
+const personalProjectsBtn = document.getElementById("projects-btn")
 
 // Group all divisions in a single array
 const mainMenuBtns = [
-  aboutBtn,
+  aboutMeBtn,
   jobExperiencesBtn,
   diplomasBtn,
-  projectsBtn,
+  personalProjectsBtn,
   skillsBtn
 ]
 
@@ -50,7 +50,7 @@ for (let i = 0; i < mainMenuBtns.length; i++) {
 // <--------------------------- D I V I S I O N S ---------------------------->
 
 // Get all divisions
-const aboutDiv = document.getElementById("about-div")
+const aboutMeDiv = document.getElementById("about-me-div")
 const jobExperiencesDiv = document.getElementById("job-experiences-div")
 const diplomasDiv = document.getElementById("diplomas-div")
 const projectsDiv = document.getElementById("projects-div")
@@ -59,9 +59,9 @@ const skillsDiv = document.getElementById("skills-div")
 // Group all divisions in a single array
 const divsContent = [
   {
-    button: "about-btn",
+    button: "about-me-btn",
     id: "about-div",
-    content: aboutDiv,
+    content: aboutMeDiv,
   },
   {
     button: "job-experiences-btn",

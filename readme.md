@@ -15,7 +15,7 @@ experience.
 - About me
 - Job experiences
 - Diplomas
-- Project
+- Personal projects
 - Skills
 
 ## Used technologies
