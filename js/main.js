@@ -252,18 +252,18 @@ jobExperiencesUl.innerHTML = jobExperiencesUlContent
 
 const diplomas = [
   {
-    title: 'Master “Expert en ingénierie de l’intelligence artificielle” (à venir)',
-    school: "ESGI",
+    title: 'Master of Computer Science - Artificial Intelligence Program (ongoing)',
+    school: "ESGI Paris",
     date: "09/2024 - 09/2026"
   },
   {
-    title: 'Bachelor “Chargé de développement de solutions applicatives ou logicielles”',
-    school: "ESGI",
+    title: "Bachelor of Computer Science - Artificial Intelligence Program",
+    school: "ESGI Paris",
     date: "2021 - 2024"
   },
   {
-    title: "Bac Général",
-    school: "LGT Robert Weinum",
+    title: "High School Diploma (specialized in computer science, maths & economics)",
+    school: "LGT Robert Weinum Saint Martin",
     date: "09/2018 - 07/2021"
   }
 ]
