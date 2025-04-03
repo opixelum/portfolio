@@ -161,35 +161,35 @@ goBackBtn.addEventListener("click", function() {
 // Job list
 const jobExperiences = [
   {
-    title: "Ingénieur/Chercheur en Systèmes Distribués (alternance)",
+    title: "Blockchain Engineer & Researcher (apprenticeship)",
     company: "CEA",
     place: "Paris",
     date: "09/2022 - 09/2024",
     tasks: [
-      "Papier scientiﬁque sur la consommation de ressources computationnelles de plusieurs proxy patterns de smart contracts.",
-      "Solutions de traçabilité de données à base de blockchains.",
-      "Carte interactive simulant un réseau de nœuds blockchains & de capteurs météorologiques avec analyse de la consommation énergétique."
+      "Scientific paper on the computational resource consumption of several smart contract proxy patterns",
+      "Blockchain-based data traceability solutions",
+      "Interactive map to simulate a network of blockchain nodes & weather sensors and calculate its energy consumption",
+      "Experimentation with tools and working methods to establish a common laboratory library"
     ]
   },
   {
-    title: "Développeur Web 3 (stage)",
+    title: "Web3 Developer (internship)",
     company: "Neofacto",
     place: "Paris",
     date: "05/2022 - 08/2022",
     tasks: [
-      "Smart contracts pour investissements DCA automatiques.",
-      "Application web décentralisée."
+      "Decentralized application for automatic DCA investments in decentralized finance"
     ]
   },
   {
-    title: "Développeur Logiciel (freelance)",
+    title: "Software Developer",
     company: "Feature",
     place: "Paris",
     date: "03/2022 - 07/2022",
     tasks: [
-      "Tests de smart contracts.",
-      "Optimisation de smart contracts.",
-      "Scripting pour intégration continue sur GitHub."
+        "Smart contract optimization",
+        "Smart contract tests",
+        "CI/CD on GitHub"
     ]
   }
 ]
