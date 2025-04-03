@@ -356,23 +356,16 @@ personalProjectsUl.innerHTML = personalProjectsUlContent
 // <------------------------------ S K I L L S ------------------------------->
 
 const skills = [
-  "Python",
   "Rust",
   "C",
-  "Solidity",
-  "JavaScript",
-  "TypeScript",
+  "Python",
+  "Torch",
+  "Polars",
   "TensorFlow",
-  "PyTorch",
-  "SQL",
-  "Cassandra",
-  "Hadoop",
-  "PySpark",
-  "Neo4J",
+  "Solidity",
+  "Pandas",
+  "Spark",
   "PowerBI",
-  "Excel",
-  "Linux",
-  "Windows",
 ]
 
 // Taking container from the DOM
