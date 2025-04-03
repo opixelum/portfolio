@@ -252,6 +252,11 @@ jobExperiencesUl.innerHTML = jobExperiencesUlContent
 
 const diplomas = [
   {
+    title: 'AI Skills Fest 50 Days Training (ongoing)',
+    school: "Microsoft (remote)",
+    date: "04/2025 - 05/2025",
+  },
+  {
     title: 'Master of Computer Science - Artificial Intelligence Program (ongoing)',
     school: "ESGI Paris",
     date: "09/2024 - 09/2026"
