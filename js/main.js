@@ -293,30 +293,41 @@ diplomasUl.innerHTML = diplomasUlContent
 
 
 // <---------------------------- P R O J E C T S ----------------------------->
-
 const personalProjects = [
   {
+    title: "Kuma (work in progress)",
+    brief: "AI agent that recommends responses to messages by analyzing the conversation history, the sentiment of the talk, the recipient, and the mood selected by the user (humor, flirt, professional, etc.).",
+    date: "03/2025 - present",
+    url: "https://github.com/the3neurons/kuma",
+  },
+  {
+    title: "FinMood",
+    brief: "Stock market news sentiment classifier that predicts whether a finance or politic announcement will drive stocks up or down.",
+    date: "03/2025",
+    url: "https://finmood.streamlit.app",
+  },
+  {
+    title: "Twitch (ongoing)",
+    brief: "AI development live streams on Twitch, sharing my open-source projects and helping viewers in theirs.",
+    date: "02/2025 - present",
+    url: "https://twitch.tv/opixelum",
+  },
+  {
     title: "Atamai",
-    brief: "Librairie de machine learning en Rust avec interface Python.",
-    date: "07/2024 - Présent",
+    brief: "Lightweight deep learning framework built entirely from scratch in Rust for MLP and CNNs.",
+    date: "07/2024",
     url: "https://github.com/opixelum/atamai",
   },
   {
-    title: "Opixelib",
-    brief: "Librairie multi-langages comprenant des modules de tri et de maths.",
-    date: "10/2023 - Présent",
-    url: "https://github.com/opixelum/opixelib",
-  },
-  {
     title: "ALIA",
-    brief: "Application de classiﬁcation d’arachnides avec notre propre librairie de machine learning en Rust et interface Python.",
-    date: "03/2024 - 07/2024",
+    brief: "Spider recognizer built using Atamai.",
+    date: "07/2024",
     url: "https://github.com/alia-team/ai",
   },
   {
-    title: "Kaggle",
-    brief: "Divers projets de machine learning (régression, classification, ...).",
-    date: "01/2024 - Présent",
+    title: "Kaggle (ongoing)",
+    brief: "Participated in multiple competitions, built a dataset downloaded by thousands of people and a lot of notebooks on different machine/deep learning topics.",
+    date: "01/2024 - present",
     url: "https://kaggle.com/antobenedetti",
   },
 ]
