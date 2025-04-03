@@ -161,6 +161,26 @@ goBackBtn.addEventListener("click", function() {
 // Job list
 const jobExperiences = [
   {
+    title: "Founder & CEO (for freelancing)",
+    company: "AIO",
+    place: "Paris",
+    date: "03/2025 - present",
+    tasks: [
+      "AI-powered virtual companion assisting elderly users in nursing homes, in their medications schedule, communication with their family, save memories and more. Medical staff can follow the medications schedule registered by the AI assistant of the patients"
+    ]
+  },
+  {
+    title: "Data Scientist (apprenticeship)",
+    company: "BNP Paribas Personal Finance",
+    place: "Paris",
+    date: "09/2024 - present",
+    tasks: [
+      "AI model for predicting when a client is most likely to cancel his insurance or card contract",
+      "Data analysis for inclusive finance",
+      "Prediction on which client to contact for marketing campaigns"
+    ]
+  },
+  {
     title: "Blockchain Engineer & Researcher (apprenticeship)",
     company: "CEA",
     place: "Paris",
